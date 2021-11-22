@@ -89,7 +89,12 @@ namespace system_programming_task_3.ViewModel
                         mainWindow.prog.Value = 100;
                         MessageBox.Show("encryption completed successfully");
                     }
-                   
+                     else 
+                    {
+                        EncryptAndDecrypt.Decrypt (text);
+                        mainWindow.prog.Value = 100;
+                        MessageBox.Show("Decryption completed successfully");
+                    }
                 }
 
             });
